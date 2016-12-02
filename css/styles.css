@@ -1,0 +1,103 @@
+/**:not(body):not(html) {
+  box-sizing: border-box;
+  border:1px dashed #000;
+}*/
+a{
+  text-decoration: none;
+  color:#D3D3D3;
+  font-weight: lighter;
+}
+img.secondary-image{
+  display: none;
+}
+img{
+  max-width: 100%;
+}
+h2{
+    font-weight: normal;
+}
+.logo img{
+  width: 40%;
+}
+.navigation{
+  padding: 15px;
+  overflow:hidden;
+}
+.logo{
+  float: left;
+}
+.nav{
+  float: right;
+}
+.articles{
+  clear: both;
+}
+.blurb h2{
+  font-size: 13pt;
+}
+.blurb span{
+  font-size: 11pt;
+}
+
+
+
+/*DESKTOP*/
+@media screen and (min-width:1000px) {
+  #computer-guy{
+    width: 60%;
+    height: 40vw;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    background-image: url('../img/guy-couch.jpg');
+    background-size: cover;
+  }
+  #computer-guy .shoutout{
+    width: 70%;
+    height: auto;
+    background-color: #263238;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: #fff;
+    padding: 15px;
+  }
+  #ipad-lady, #mobile-lady{
+    width: 40%;
+    height: 20vw;
+    float: right;
+    display: inline-block;
+    position: relative;
+  }
+  #ipad-lady{
+    background-image: url('../img/lady-ipad.jpg');
+    background-size: cover;
+  }
+  #mobile-lady{
+    background-image: url('../img/lady-mobile.jpg');
+    background-size: cover;
+  }
+  #ipad-lady .blurb, #mobile-lady .blurb{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    color: #fff;
+    height: auto;
+  }
+  #ipad-lady .blurb{
+    background-color: #083663;
+  }
+  #mobile-lady .blurb{
+    background-color: #009688;
+  }
+
+}
+/*TABLET*/
+@media screen and (min-width:600px) and (max-width:749px) {
+}
+
+
+/*MOBILE*/
+@media screen and (max-width:599px) {
+}
