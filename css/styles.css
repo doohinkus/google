@@ -1,7 +1,7 @@
-/**:not(body):not(html) {
+*:not(body):not(html) {
   box-sizing: border-box;
   border:1px dashed #000;
-}*/
+}
 a{
   text-decoration: none;
   color:#D3D3D3;
@@ -10,14 +10,9 @@ a{
 img.secondary-image{
   display: none;
 }
-img{
-  max-width: 100%;
-}
-h2{
-    font-weight: normal;
-}
-.logo img{
-  width: 40%;
+
+h2, h3{
+  font-weight: lighter;
 }
 .navigation{
   padding: 15px;
@@ -25,43 +20,91 @@ h2{
 }
 .logo{
   float: left;
+  width: 30%;
+}
+.logo img{
+  max-width: 100%;
 }
 .nav{
   float: right;
+  margin-top: 2%;
+}
+.small-nav{
+  display: none;
 }
 .articles{
   clear: both;
 }
+
 .blurb h2{
   font-size: 13pt;
 }
 .blurb span{
   font-size: 11pt;
 }
-
-
+.mobile{
+  display: none;
+}
+#computer-guy, #ipad-lady, #mobile-lady{
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+#computer-guy:hover, #ipad-lady:hover, #mobile-lady:hover{
+  background-size: 130%;
+}
+#computer-guy .shoutout{
+  width: 70%;
+  height: auto;
+  background-color: #263238;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: #fff;
+  padding: 15px;
+}
+#ipad-lady{
+  background-image: url('../img/lady-ipad.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#mobile-lady{
+  background-image: url('../img/lady-mobile.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#computer-guy{
+  background-image: url('../img/guy-couch.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#ipad-lady .blurb{
+  background-color: #083663;
+}
+#mobile-lady .blurb{
+  background-color: #009688;
+}
+#ipad-lady .blurb, #mobile-lady .blurb{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  color: #fff;
+  height: auto;
+}
 
 /*DESKTOP*/
-@media screen and (min-width:1000px) {
+
+@media screen and (min-width:750px) {
+
   #computer-guy{
     width: 60%;
     height: 40vw;
     float: left;
     position: relative;
     overflow: hidden;
-    background-image: url('../img/guy-couch.jpg');
-    background-size: cover;
   }
-  #computer-guy .shoutout{
-    width: 70%;
-    height: auto;
-    background-color: #263238;
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-    color: #fff;
-    padding: 15px;
-  }
+
+
   #ipad-lady, #mobile-lady{
     width: 40%;
     height: 20vw;
@@ -69,35 +112,83 @@ h2{
     display: inline-block;
     position: relative;
   }
-  #ipad-lady{
-    background-image: url('../img/lady-ipad.jpg');
-    background-size: cover;
-  }
-  #mobile-lady{
-    background-image: url('../img/lady-mobile.jpg');
-    background-size: cover;
-  }
   #ipad-lady .blurb, #mobile-lady .blurb{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 15px;
-    color: #fff;
-    height: auto;
+    height: 30%;
   }
-  #ipad-lady .blurb{
-    background-color: #083663;
-  }
-  #mobile-lady .blurb{
-    background-color: #009688;
+  .blurb h2{
+    margin-top: -4%;
   }
 
 }
 /*TABLET*/
 @media screen and (min-width:600px) and (max-width:749px) {
+  .nav{
+    display: none;
+  }
+  .small-nav{
+    display: inline-block;
+    float: right;
+  }
+  #computer-guy{
+    width: 100%;
+    height: 40vw;
+    overflow: hidden;
+    height: 40vw;
+    float: left;
+    position: relative;
+    overflow: hidden;
+  }
+  #computer-guy .shoutout{
+    width: 50%;
+  }
+  #ipad-lady, #mobile-lady{
+    width: 50%;
+    height: 40vw;
+    float: left;
+    display: inline-block;
+    position: relative;
+  }
+  #ipad-lady .blurb h2, #mobile-lady .blurb h2{
+
+    margin-top: -10px;
+  }
+
 }
-
-
 /*MOBILE*/
 @media screen and (max-width:599px) {
+  .nav{
+    display: none;
+  }
+  .small-nav{
+    display: inline-block;
+    float: right;
+  }
+  .mobile{
+    display: block;
+    float: left;
+  }
+  #computer-guy{
+    width: 100%;
+    height: 70vw;
+    position: relative;
+    overflow: hidden;
+    clear: both;
+  }
+  #computer-guy .shoutout{
+    width: 92vw;
+    position: relative;
+  }
+  #mobile-lady, #ipad-lady{
+    position: relative;
+    width: 100%;
+    display: block;
+    background: none;
+    clear: both;
+  }
+  #mobile-lady .blurb, #ipad-lady .blurb{
+    width: 100%;
+  }
+
+
+
 }
