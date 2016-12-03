@@ -5,15 +5,19 @@
 /*HEADER*/
 #header{
   background-color: #fff;
-  padding: 15px;
+  /*padding: 15px;*/
   overflow: hidden;
 }
 #logo{
   float: left;
-  width: 35%;
+  width: 250px;
+  padding: 15px;
 }
 #small-nav{
   float: right;
+}
+#big-nav{
+  display: none;
 }
 /*CONSTANT CLASSES*/
 h2{
@@ -41,9 +45,108 @@ span, p{
 
 
 /*DESKTOP*/
-@media screen and (min-width:750px) {
+@media screen and (min-width:1000px) {
+/*TOP NAVIGATION*/
+  #small-nav{
+    display: none;
+  }
+  #big-nav{
+    display: inline-block;
+    float: right;
+    padding-right: 15px;
+  }
+  #big-nav span{
+    display: inline-block;
+
+    /*padding: 15px;*/
+    color: #999;
+    height: 62px;
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  #big-nav span:hover{
+    background-color: #efefef;
+  }
+
+  /*COMPUTER GUY*/
+  #computer-guy{
+    background: url(../img/guy-couch.jpg);
+    background-size: cover;
+    min-height: 450px;
+    position: relative;
+    float: left;
+    width: 65%;
+    clear: both;
+  }
+  #computer-guy .shoutout{
+    background-color: #263238;
+    margin: auto;
+    bottom: 15px;
+    width: 45%;
+    margin-left: 2.5%;
+    position: absolute;
+    padding: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  #computer-guy .shoutout h2{
+  font-size: 24pt;
+  margin-bottom: 14pt;
+  font-weight: lighter;
+  margin-bottom: 5pt;
+  }
+  #computer-guy .shoutout p{
+    margin-top: 17pt;
+  }
+  #computer-guy .shoutout span,   #computer-guy .shoutout p{
+    font-size: 11pt;
+  }
+  /* FOR LADY IPAD AND LADY MOBILE
+  content class redeclaration specific to mobile layout*/
+  .content{
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 145px;
+  }
+  .content h2{
+    font-size: 13pt;
+    padding-top: 150px;
+    padding-left: 20px;
+  }
+  .content span{
+    font-size: 12pt;
+    display: inline-block;
+
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+  /*LADY IPAD*/
+  #lady-ipad{
+    float: right;
+    height: 225px;
+    width: 35%;
+    border-color: red;
+  }
+  #lady-ipad .content{
+    background-image: url(../img/lady-ipad.jpg);
+    background-size: cover;
+  }
+  /*LADY MOBILE*/
+  #lady-mobile{
+    float: right;
+    height: 225px;
+    width: 35%;
+  }
+  #lady-mobile .content{
+    background-image: url(../img/lady-mobile.jpg);
+    background-size: cover;
+  }
 
 }
+
+
+
 /*TABLET*/
 @media screen and (min-width:600px) and (max-width:999px) {
   /*COMPUTER GUY*/
