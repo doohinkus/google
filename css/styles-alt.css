@@ -45,7 +45,7 @@ span, p{
 
 }
 /*TABLET*/
-@media screen and (min-width:600px) and (max-width:749px) {
+@media screen and (min-width:600px) and (max-width:999px) {
   /*COMPUTER GUY*/
   #computer-guy{
     background: url(../img/guy-couch.jpg);
@@ -91,13 +91,15 @@ span, p{
   }
   .content span{
     font-size: 12pt;
+    display: inline-block;
     padding-top: 15px;
     padding-left: 20px;
+    padding-bottom: 20px;
   }
   /*LADY IPAD*/
   #lady-ipad{
     float: left;
-    height: 300px;
+    /*height: 300px;*/
     width: 50%;
   }
   #lady-ipad .content{
@@ -106,7 +108,7 @@ span, p{
   /*LADY MOBILE*/
   #lady-mobile{
     float: right;
-    height: 300px;
+    /*height: 300px;*/
     width: 50%;
   }
   #lady-mobile .content{
