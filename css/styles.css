@@ -1,7 +1,7 @@
-*:not(body):not(html) {
+/**:not(body):not(html) {
   box-sizing: border-box;
   border:1px dashed #000;
-}
+}*/
 a{
   text-decoration: none;
   color:#D3D3D3;
@@ -204,34 +204,51 @@ h2, h3{
     width: 93%;
     position: absolute;
   }
-  #mobile-lady, #ipad-lady{
+  #mobile-lady, #ipad-lady, .blurb{
     position: relative;
     overflow:hidden;
     width: 100%;
     display: block;
     background: none;
     clear: both;
-    border-color:red;
+    border-color: red;
+    margin:0 !important;
+    padding: 0 !important;
   }
   #mobile-lady{
     background-color: #009688;
+
   }
   #ipad-lady{
     background-color: #083663;
+
+  }
+  #mobile-lady .blurb .mobile{
+    background: url(..img/lady-mobile.jpg);
+    border-color: green;
   }
 
-    .mobile{
-      width: 30%;
-      float: left;
-      border-color:red;
-    }
-    .blurb2{
-      width: 70%;
-      float: right;
-    }
-    .mobile img{
-      max-width:100%;
-    }
+  .mobile{
+    margin:0;
+    padding:0;
+    width: 30%;
+    float: left;
+    border-color:red;
+    height: 100%;
+  }
+  .blurb2, .blurb2{
+    padding:0;
+    width: 70%;
+    float: right;
+  }
+  .blurb2 h2, .blurb2 span{
+    margin-left: 15px;
+  }
+  .mobile img{
+    max-width:100%;
+    padding:0;
+
+  }
 
 
 
