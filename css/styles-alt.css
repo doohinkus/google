@@ -49,10 +49,10 @@ span{
 #computer-guy .shoutout{
   background-color: #263238;
   margin: auto;
+  bottom: 15px;
   width: 90%;
+  margin-left: 2.5%;
   position: absolute;
-  bottom: 10px;
-  margin-left: 5%;
 }
 /* FOR LADY IPAD AND LADY MOBILE
 content class redeclaration specific to mobile layout*/
@@ -64,6 +64,7 @@ content class redeclaration specific to mobile layout*/
   background-position: -55px 0;
 }
 .content h2{
+  font-size: 12pt;
   padding-top: 15px;
 }
 /*LADY IPAD*/
