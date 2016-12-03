@@ -103,7 +103,16 @@ h2, h3{
     position: relative;
     overflow: hidden;
   }
-
+  #computer-guy .shoutout{
+    width: 70%;
+    height: auto;
+    background-color: #263238;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: #fff;
+    padding: 15px;
+  }
 
   #ipad-lady, #mobile-lady{
     width: 40%;
@@ -141,6 +150,7 @@ h2, h3{
   #computer-guy .shoutout{
     width: 50%;
   }
+
   #ipad-lady, #mobile-lady{
     width: 50%;
     height: 40vw;
@@ -169,25 +179,59 @@ h2, h3{
   }
   #computer-guy{
     width: 100%;
+    height: 40vw;
+    overflow: hidden;
+    height: 40vw;
+    float: left;
+    position: relative;
+    overflow: hidden;
+  }
+  #computer-guy .shoutout p{
+    display: none;
+  }
+
+  #ipad-lady .blurb, #mobile-lady .blurb{
+    position: relative;
+  }
+  #computer-guy{
+    width: 100%;
     height: 70vw;
     position: relative;
     overflow: hidden;
     clear: both;
   }
   #computer-guy .shoutout{
-    width: 92vw;
-    position: relative;
+    width: 93%;
+    position: absolute;
   }
   #mobile-lady, #ipad-lady{
     position: relative;
+    overflow:hidden;
     width: 100%;
     display: block;
     background: none;
     clear: both;
+    border-color:red;
   }
-  #mobile-lady .blurb, #ipad-lady .blurb{
-    width: 100%;
+  #mobile-lady{
+    background-color: #009688;
   }
+  #ipad-lady{
+    background-color: #083663;
+  }
+
+    .mobile{
+      width: 30%;
+      float: left;
+      border-color:red;
+    }
+    .blurb2{
+      width: 70%;
+      float: right;
+    }
+    .mobile img{
+      max-width:100%;
+    }
 
 
 
