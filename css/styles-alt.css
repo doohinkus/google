@@ -23,7 +23,7 @@ h2{
   margin-bottom: 0;
   margin-top:0;
 }
-span{
+span, p{
   color: #fff;
 }
 .shoutout{
@@ -39,58 +39,127 @@ span{
   height: 100%;
 }
 
-/*COMPUTER GUY*/
-#computer-guy{
-  background: url(../img/guy-couch.jpg);
-  background-size: cover;
-  min-height: 350px;
-  position: relative;
-}
-#computer-guy .shoutout{
-  background-color: #263238;
-  margin: auto;
-  bottom: 15px;
-  width: 90%;
-  margin-left: 2.5%;
-  position: absolute;
-}
-/* FOR LADY IPAD AND LADY MOBILE
-content class redeclaration specific to mobile layout*/
-.content{
-  padding-left: 135px;
-  vertical-align: middle;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: -55px 0;
-}
-.content h2{
-  font-size: 12pt;
-  padding-top: 15px;
-}
-/*LADY IPAD*/
-#lady-ipad{
-  height: 100px;
-}
-#lady-ipad .content{
-  background-image: url(../img/lady-ipad.jpg);
-}
-/*LADY MOBILE*/
-#lady-mobile{
-  height: 100px;
-}
-#lady-mobile .content{
-  background-image: url(../img/lady-mobile.jpg);
-}
+
 /*DESKTOP*/
 @media screen and (min-width:750px) {
 
 }
 /*TABLET*/
 @media screen and (min-width:600px) and (max-width:749px) {
+  /*COMPUTER GUY*/
+  #computer-guy{
+    background: url(../img/guy-couch.jpg);
+    background-size: cover;
+    min-height: 350px;
+    position: relative;
+  }
+  #computer-guy .shoutout{
+    background-color: #263238;
+    margin: auto;
+    bottom: 15px;
+    width: 45%;
+    margin-left: 2.5%;
+    position: absolute;
+    padding: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  #computer-guy .shoutout h2{
+  font-size: 24pt;
+  margin-bottom: 14pt;
+  font-weight: lighter;
+  margin-bottom: 5pt;
+  }
+  #computer-guy .shoutout p{
+    margin-top: 17pt;
+  }
+  #computer-guy .shoutout span,   #computer-guy .shoutout p{
+    font-size: 11pt;
+  }
+  /* FOR LADY IPAD AND LADY MOBILE
+  content class redeclaration specific to mobile layout*/
+  .content{
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .content h2{
+    font-size: 14pt;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-top: 58%;
+    padding-bottom: 20px;
+  }
+  .content span{
+    font-size: 12pt;
+    padding-top: 15px;
+    padding-left: 20px;
+  }
+  /*LADY IPAD*/
+  #lady-ipad{
+    float: left;
+    height: 300px;
+    width: 50%;
+  }
+  #lady-ipad .content{
+    background-image: url(../img/lady-ipad.jpg);
+  }
+  /*LADY MOBILE*/
+  #lady-mobile{
+    float: right;
+    height: 300px;
+    width: 50%;
+  }
+  #lady-mobile .content{
+    background-image: url(../img/lady-mobile.jpg);
+  }
 
 }
 /*MOBILE*/
 @media screen and (max-width:599px) {
-
+  #computer-guy .shoutout p{
+    display: none;
+  }
+  /*COMPUTER GUY*/
+  #computer-guy{
+    background: url(../img/guy-couch.jpg);
+    background-size: cover;
+    min-height: 350px;
+    position: relative;
+  }
+  #computer-guy .shoutout{
+    background-color: #263238;
+    margin: auto;
+    bottom: 15px;
+    width: 90%;
+    margin-left: 2.5%;
+    position: absolute;
+  }
+  /* FOR LADY IPAD AND LADY MOBILE
+  content class redeclaration specific to mobile layout*/
+  .content{
+    padding-left: 135px;
+    vertical-align: middle;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: -55px 0;
+  }
+  .content h2{
+    font-size: 12pt;
+    padding-top: 15px;
+  }
+  /*LADY IPAD*/
+  #lady-ipad{
+    height: 100px;
+  }
+  #lady-ipad .content{
+    background-image: url(../img/lady-ipad.jpg);
+  }
+  /*LADY MOBILE*/
+  #lady-mobile{
+    height: 100px;
+  }
+  #lady-mobile .content{
+    background-image: url(../img/lady-mobile.jpg);
+  }
 
 }
