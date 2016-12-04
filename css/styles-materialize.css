@@ -1,0 +1,68 @@
+/**:not(body):not(html) {
+  box-sizing: border-box;
+  border:1px dashed #000;
+}*/
+#google{
+  width: 200px;
+  margin-left: 15px;
+}
+.z-depth-0 {
+  -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
+  -moz-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0);
+}
+.col h3{
+  font-size: 1.45rem;
+  margin-bottom: 5px;
+}
+.col.m6{
+  height: 275px;
+  /*margin-top: -20px;*/
+  color: white;
+}
+#sidenav-overlay{
+  opacity: 0 !important;
+}
+
+#computer-guy{
+  background: url(../img/guy-couch.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 550px;
+}
+#computer-guy-col{
+  position: relative;
+}
+#computer-shoutout{
+  background-color: #212121;
+  margin-top: 22%;
+  width: 30%;
+  padding: 15px;
+  bottom: 0;
+}
+#computer-shoutout h3{
+  font-size: 1.55rem;
+}
+#ipad-lady-content{
+  margin-top: 175px;
+  height: 100px;
+  padding: 5px;
+  background-color: #1a237e;
+}
+#mobile-lady-content{
+  margin-top: 175px;
+  height: 100px;
+  padding: 5px;
+  background-color: #006064;;
+}
+#mobile-lady{
+  background: url(../img/lady-mobile.jpg);
+  background-size: cover;
+  padding: 0;
+
+}
+#ipad-lady{
+  background: url(../img/lady-ipad.jpg);
+  background-size: cover;
+  padding: 0;
+}
